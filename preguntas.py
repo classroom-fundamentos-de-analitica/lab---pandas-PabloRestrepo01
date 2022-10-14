@@ -49,9 +49,10 @@ def pregunta_03():
     Name: _c1, dtype: int64
 
     """
-    return tbl0.groupby('_c1').count()
+    tablaModificada = tbl0.groupby('_c1')['_c1'].count().head()
+    return tablaModificada
 
-
+print(pregunta_03())
 def pregunta_04():
     """
     Calcule el promedio de _c2 por cada letra de la _c1 del archivo `tbl0.tsv`.
