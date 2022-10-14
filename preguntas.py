@@ -49,7 +49,7 @@ def pregunta_03():
     Name: _c1, dtype: int64
 
     """
-    return
+    return tbl0.groupby('_c0').count()
 
 
 def pregunta_04():
