@@ -24,7 +24,6 @@ def pregunta_01():
     """
     return tbl0.shape[0]
 
-
 def pregunta_02():
     """
     ¿Cuál es la cantidad de columnas en la tabla `tbl0.tsv`?
@@ -33,7 +32,7 @@ def pregunta_02():
     4
 
     """
-    return
+    return tbl0.shape[1]
 
 
 def pregunta_03():
