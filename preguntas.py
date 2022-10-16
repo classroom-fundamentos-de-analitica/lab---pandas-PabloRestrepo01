@@ -129,8 +129,9 @@ def pregunta_08():
     39   39   E    5  1998-01-26    44
 
     """
-    tbl0['suma'] = tbl0['_c0'] + tbl0['_c2']
-    return tbl0
+    tabla = tbl0
+    tabla['suma'] = tbl0['_c0'] + tbl0['_c2']
+    return tabla
 
 
 def pregunta_09():
@@ -148,8 +149,9 @@ def pregunta_09():
     39   39   E    5  1998-01-26  1998
 
     """
-    tbl0['year'] = tbl0['_c3'].map(lambda x: int(x.split('-')[0]))
-    return tbl0
+    tabla = tbl0
+    tabla['year'] = tbl0['_c3'].map(lambda x: int(x.split('-')[0]))
+    return tabla
 
 print(pregunta_09())
 def pregunta_10():
