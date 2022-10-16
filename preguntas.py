@@ -66,6 +66,7 @@ def pregunta_04():
     """
     return tbl0.groupby('_c1')['_c2'].mean()
 
+
 def pregunta_05():
     """
     Calcule el valor máximo de _c2 por cada letra en la columna _c1 del archivo
@@ -128,9 +129,8 @@ def pregunta_08():
     39   39   E    5  1998-01-26    44
 
     """
-    tbl0['suma'] = tbl0['_c0'] + tbl0['_c2']
-    return tbl0
-print(pregunta_08())
+    return 1 +1 
+
 
 def pregunta_09():
     """
