@@ -167,7 +167,7 @@ def pregunta_10():
     3   D                  1:2:3:5:5:7
     4   E  1:1:2:3:3:4:5:5:5:6:7:8:8:9
     """
-    tabla = {'_c1': sorted(tbl0['_c1'].unique()), '_c2': []}
+    tabla = {'_c2': []}
 
     tabla1 = tbl0[tbl0['_c1'] == 'A']
     listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
@@ -193,11 +193,10 @@ def pregunta_10():
     listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
     listaA = ":".join(listaA)
     tabla['_c2'].append(listaA)
-    
-    tabla = pd.DataFrame(tabla)
+    tabla = pd.DataFrame(tabla, index=pd.Series(["A", "B", "C", "D", "E"], name="_c1"))
     return tabla
 
-
+print(pregunta_10())
 def pregunta_11():
     """
     Construya una tabla que contenga _c0 y una lista separada por ',' de los valores de
