@@ -167,8 +167,36 @@ def pregunta_10():
     3   D                  1:2:3:5:5:7
     4   E  1:1:2:3:3:4:5:5:5:6:7:8:8:9
     """
-    return
-
+    tabla = {'_c0': sorted(tbl0['_c1'].unique()), '_c1': []}
+    #tabla = pd.DataFrame(tabla)
+    tabla1 = tbl0[tbl0['_c1'] == 'A']
+    listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
+    listaA = ":".join(listaA)
+    tabla['_c1'].append(listaA)
+    
+    tabla1 = tbl0[tbl0['_c1'] == 'B']
+    listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
+    listaA = ":".join(listaA)
+    tabla['_c1'].append(listaA)
+    
+    tabla1 = tbl0[tbl0['_c1'] == 'C']
+    listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
+    listaA = ":".join(listaA)
+    tabla['_c1'].append(listaA)
+    
+    tabla1 = tbl0[tbl0['_c1'] == 'D']
+    listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
+    listaA = ":".join(listaA)
+    tabla['_c1'].append(listaA)
+    
+    tabla1 = tbl0[tbl0['_c1'] == 'E']
+    listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
+    listaA = ":".join(listaA)
+    tabla['_c1'].append(listaA)
+    
+    tabla = pd.DataFrame(tabla)
+    return tabla
+print(pregunta_10())
 
 def pregunta_11():
     """
