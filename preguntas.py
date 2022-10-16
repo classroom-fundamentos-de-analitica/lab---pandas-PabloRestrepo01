@@ -151,7 +151,7 @@ def pregunta_09():
     """
     tbl0['year'] = tbl0['_c3'].map(lambda x: int(x.split('-')[0]))
     return tbl0
-print(pregunta_09())
+
 
 def pregunta_10():
     """
