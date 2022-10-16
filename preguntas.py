@@ -1,5 +1,5 @@
 """
-Laboratorio - Manipulación de Datos usando Pandas
+Laboratorio - ManipulaciÃ³n de Datos usando Pandas
 -----------------------------------------------------------------------------------------
 
 Este archivo contiene las preguntas que se van a realizar en el laboratorio.
@@ -16,7 +16,7 @@ tbl2 = pd.read_csv("tbl2.tsv", sep="\t")
 
 def pregunta_01():
     """
-    ¿Cuál es la cantidad de filas en la tabla `tbl0.tsv`?
+    Â¿CuÃ¡l es la cantidad de filas en la tabla `tbl0.tsv`?
 
     Rta/
     40
@@ -26,7 +26,7 @@ def pregunta_01():
 
 def pregunta_02():
     """
-    ¿Cuál es la cantidad de columnas en la tabla `tbl0.tsv`?
+    Â¿CuÃ¡l es la cantidad de columnas en la tabla `tbl0.tsv`?
 
     Rta/
     4
@@ -37,7 +37,7 @@ def pregunta_02():
 
 def pregunta_03():
     """
-    ¿Cuál es la cantidad de registros por cada letra de la columna _c1 del archivo
+    Â¿CuÃ¡l es la cantidad de registros por cada letra de la columna _c1 del archivo
     `tbl0.tsv`?
 
     Rta/
@@ -69,7 +69,7 @@ def pregunta_04():
 
 def pregunta_05():
     """
-    Calcule el valor máximo de _c2 por cada letra en la columna _c1 del archivo
+    Calcule el valor mÃ¡ximo de _c2 por cada letra en la columna _c1 del archivo
     `tbl0.tsv`.
 
     Rta/
@@ -87,7 +87,7 @@ def pregunta_05():
 def pregunta_06():
     """
     Retorne una lista con los valores unicos de la columna _c4 de del archivo `tbl1.csv`
-    en mayusculas y ordenados alfabéticamente.
+    en mayusculas y ordenados alfabÃ©ticamente.
 
     Rta/
     ['A', 'B', 'C', 'D', 'E', 'F', 'G']
@@ -136,7 +136,7 @@ def pregunta_08():
 
 def pregunta_09():
     """
-    Agregue el año como una columna al archivo `tbl0.tsv`.
+    Agregue el aÃ±o como una columna al archivo `tbl0.tsv`.
 
     Rta/
         _c0 _c1  _c2         _c3  year
@@ -168,7 +168,7 @@ def pregunta_10():
     4   E  1:1:2:3:3:4:5:5:5:6:7:8:8:9
     """
     tabla = {'_c0': sorted(tbl0['_c1'].unique()), '_c1': []}
-    #tabla = pd.DataFrame(tabla)
+
     tabla1 = tbl0[tbl0['_c1'] == 'A']
     listaA = [str(x) for x in sorted(list(tabla1['_c2']))]
     listaA = ":".join(listaA)
@@ -196,7 +196,6 @@ def pregunta_10():
     
     tabla = pd.DataFrame(tabla)
     return tabla
-print(pregunta_10())
 
 def pregunta_11():
     """
