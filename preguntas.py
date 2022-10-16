@@ -133,7 +133,6 @@ def pregunta_08():
     return tbl0
 
 
-
 def pregunta_09():
     """
     Agregue el aÃ±o como una columna al archivo `tbl0.tsv`.
@@ -152,7 +151,7 @@ def pregunta_09():
     tbl0['year'] = tbl0['_c3'].map(lambda x: int(x.split('-')[0]))
     return tbl0
 
-print(pregunta_09())
+
 def pregunta_10():
     """
     Construya una tabla que contenga _c1 y una lista separada por ':' de los valores de
@@ -196,7 +195,8 @@ def pregunta_10():
     
     tabla = pd.DataFrame(tabla)
     return tabla
-print(pregunta_10())
+
+
 def pregunta_11():
     """
     Construya una tabla que contenga _c0 y una lista separada por ',' de los valores de
