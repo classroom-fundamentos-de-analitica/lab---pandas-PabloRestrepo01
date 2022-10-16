@@ -129,11 +129,11 @@ def pregunta_08():
     39   39   E    5  1998-01-26    44
 
     """
-    tabla = tbl0
-    tabla['suma'] = tbl0['_c0'] + tbl0['_c2']
+    tabla = tbl0.copy()
+    tabla['suma'] = tabla['_c0'] + tabla['_c2']
     return tabla
 
-
+print(pregunta_08())
 def pregunta_09():
     """
     Agregue el aÃ±o como una columna al archivo `tbl0.tsv`.
@@ -149,7 +149,7 @@ def pregunta_09():
     39   39   E    5  1998-01-26  1998
 
     """
-    tabla = tbl0
+    tabla = tbl0.copy()
     tabla['year'] = tbl0['_c3'].map(lambda x: int(x.split('-')[0]))
     return tabla
 
