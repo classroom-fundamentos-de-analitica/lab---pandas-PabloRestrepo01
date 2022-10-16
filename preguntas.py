@@ -150,10 +150,10 @@ def pregunta_09():
 
     """
     tabla = tbl0.copy()
-    tabla['year'] = tabla['_c3'].map(lambda x: int(x.split('-')[0]))
+    tabla['year'] = tabla['_c3'].map(lambda x: x.split('-')[0])
     return tabla
 
-
+print(pregunta_09())
 def pregunta_10():
     """
     Construya una tabla que contenga _c1 y una lista separada por ':' de los valores de
