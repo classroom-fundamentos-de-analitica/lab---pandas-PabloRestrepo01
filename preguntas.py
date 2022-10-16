@@ -96,7 +96,7 @@ def pregunta_06():
     conteo = [x.upper() for x in conteo]
     
     return conteo
-print(pregunta_06())
+
 
 def pregunta_07():
     """
@@ -111,8 +111,8 @@ def pregunta_07():
     E    67
     Name: _c2, dtype: int64
     """
-    return
-
+    return tbl0.groupby('_c1')['_c2'].sum()
+print(pregunta_07())
 
 def pregunta_08():
     """
