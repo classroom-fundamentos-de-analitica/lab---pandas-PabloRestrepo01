@@ -82,7 +82,7 @@ def pregunta_05():
     """
     return tbl0.groupby('_c1')['_c2'].max()
 
-print(pregunta_05())
+
 def pregunta_06():
     """
     Retorne una lista con los valores unicos de la columna _c4 de del archivo `tbl1.csv`
@@ -92,8 +92,11 @@ def pregunta_06():
     ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
     """
-    return
-
+    conteo = sorted(tbl1['_c4'].unique())
+    conteo = [x.upper() for x in conteo]
+    
+    return conteo
+print(pregunta_06())
 
 def pregunta_07():
     """
