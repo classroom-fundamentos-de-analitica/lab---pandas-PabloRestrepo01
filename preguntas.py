@@ -213,9 +213,18 @@ def pregunta_11():
     38   38      d,e
     39   39    a,d,f
     """
-    return
+    tabla = {'_c0': sorted(tbl1['_c0'].unique()),'_c4': []}
+    
+    for i in range(40):
+        tabla1 = tbl1[tbl1['_c0'] == i]
+        listaA = sorted(list(tabla1['_c4']))
+        listaA = ", ".join(listaA)
+        tabla['_c4'].append(listaA)
+    
+    tabla = pd.DataFrame(tabla)
+    return tabla
 
-
+print(pregunta_11())
 def pregunta_12():
     """
     Construya una tabla que contenga _c0 y una lista separada por ',' de los valores de
