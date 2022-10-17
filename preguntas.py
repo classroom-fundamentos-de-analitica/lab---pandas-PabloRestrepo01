@@ -224,7 +224,7 @@ def pregunta_11():
     tabla = pd.DataFrame(tabla)
     return tabla
 
-print(pregunta_11())
+
 def pregunta_12():
     """
     Construya una tabla que contenga _c0 y una lista separada por ',' de los valores de
@@ -240,8 +240,20 @@ def pregunta_12():
     38   38                    eee:0,fff:9,iii:2
     39   39                    ggg:3,hhh:8,jjj:5
     """
-    return
-
+    tabla = {'_c0': [x for x in range(40)], '_c5': []}
+    
+    for i in range(40):
+        tabla1 = tbl2[tbl2['_c0'] == i]
+        lista1 = [str(x) for x in list(tabla1['_c5b'])]
+        lista2 = list(tabla1['_c5a'])
+        lista3 = []
+        for j in range(len(lista1)): lista3.append(lista2[j] + ':' + lista1[j])
+        listaA = ",".join(sorted(lista3))
+        tabla['_c5'].append(listaA)
+    
+    tabla = pd.DataFrame(tabla)
+    return tabla
+print(pregunta_12())
 
 def pregunta_13():
     """
