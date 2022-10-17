@@ -218,7 +218,7 @@ def pregunta_11():
     for i in range(40):
         tabla1 = tbl1[tbl1['_c0'] == i]
         listaA = sorted(list(tabla1['_c4']))
-        listaA = ", ".join(listaA)
+        listaA = ",".join(listaA)
         tabla['_c4'].append(listaA)
     
     tabla = pd.DataFrame(tabla)
