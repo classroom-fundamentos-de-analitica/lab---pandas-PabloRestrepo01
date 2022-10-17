@@ -253,7 +253,7 @@ def pregunta_12():
     
     tabla = pd.DataFrame(tabla)
     return tabla
-print(pregunta_12())
+
 
 def pregunta_13():
     """
@@ -269,4 +269,6 @@ def pregunta_13():
     E    275
     Name: _c5b, dtype: int64
     """
-    return
+    tabla = pd.merge(tbl0, tbl2, on = '_c0')
+    tabla2 = tabla.groupby('_c1')['_c5b'].sum()
+    return tabla2
